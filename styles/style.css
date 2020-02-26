@@ -55,8 +55,11 @@ div {
   font-weight: normal;
 }
 
-.header__link {
+.link {
   text-decoration: none;
+}
+.header__link_color {
+  color: #2F80ED;
 }
 
 .header__main-illustration {
@@ -182,6 +185,47 @@ div {
 .table__text_signature {
   margin: 20px 0 0 0;
 }
+
+.feinman {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 100px 0 0;
+  height: 790px;
+  background-image: url(../images/feinman.png);
+  background-position: left bottom;
+  background-size: 867px 637px;
+  background-repeat: no-repeat;
+}
+
+.feinman__title {
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.feinman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  margin: 70px auto 0;
+}
+
+.feinman__link {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #000000;
+}
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
     width: 200px;
