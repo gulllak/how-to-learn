@@ -9,9 +9,7 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-div {
-  border: 1px solid red;
-}
+
 
 .header {
     height: 100vh;
@@ -160,6 +158,9 @@ div {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.table_theme_white {
   margin: 0 auto 100px;
 }
 
@@ -192,7 +193,7 @@ div {
   position: relative;
   padding: 100px 0 0;
   height: 790px;
-  background-image: url(../images/feinman.png);
+  background-image: url('../images/feinman.png');
   background-position: left bottom;
   background-size: 867px 637px;
   background-repeat: no-repeat;
@@ -226,10 +227,62 @@ div {
   color: #000000;
 }
 
+.kaufman {
+  background-color: #1F1F1F;
+  display: flex;
+  flex-direction: column;
+}
+.kaufman__section-title_theme_dark {
+  color: white;
+  width: 60%;
+  text-align: center;
+  margin: 90px auto 20px;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.kaufman__section-subtitle_theme_dark {
+  color: white;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table_theme_dark {
+  z-index: 2;
+  margin: 0 auto 90px;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
     width: 200px;
     color: white;
     margin-right: 0;
     margin-top: 80px;
+}
+
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  overflow: hidden;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+  align-self: center;
 }
