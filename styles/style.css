@@ -23,7 +23,7 @@
   width: 183px;
 }
 
-.header__logo_place_header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -54,7 +54,12 @@
 .link {
   text-decoration: none;
 }
-.header__link_color {
+
+.link:hover {
+  color: #2F80ED;
+}
+
+.header__link {
   color: #2F80ED;
 }
 
@@ -165,7 +170,6 @@
 .table__cell {
   width: 250px;
   margin: 60px 0 0 0;
-
 }
 
 .table__heading {
@@ -181,8 +185,8 @@
   font-weight: normal;
 }
 
-.table__text_signature {
-  margin: 20px 0 0 0;
+.table__text:last-of-type {
+  margin: 0;
 }
 
 .feinman {
@@ -191,6 +195,7 @@
   position: relative;
   padding: 100px 0 0;
   height: 790px;
+  background-color: #F2F2F2;
   background-image: url('../images/feinman.png');
   background-position: left bottom;
   background-size: 867px 637px;
@@ -232,7 +237,7 @@
   position: relative;
   overflow: hidden;
 }
-.kaufman__section-title_theme_dark {
+.section-title_theme_dark {
   color: white;
   width: 60%;
   text-align: center;
@@ -242,7 +247,7 @@
   font-weight: bold;
 }
 
-.kaufman__section-subtitle_theme_dark {
+.section-subtitle_theme_dark {
   color: white;
   width: 60%;
   text-align: center;
@@ -264,14 +269,14 @@
     margin-top: 80px;
 }
 
-.table__heading_theme_dark {
+.heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
   margin: 0 0 20px 0;
 }
 
-.table__text_theme_dark {
+.text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -279,10 +284,12 @@
 }
 
 .kaufman__triangle {
+  background-image: url('../images/triangle.svg');
   position: absolute;
   height: 877px;
-  right: -210px;
   width: 877px;
+  right: -210px;
+  top: auto;
 }
 
 .footer {
@@ -299,27 +306,25 @@
   margin: 60px auto 40px;
 }
 
-.footer__column_content_copyright {
-  position: relative;
+.footer__columns_content_copyright {
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.footer__logo_place_footer {
+.logo_place_footer {
   height: 35px;
 }
 
-.footer_author {
-  position: absolute;
-  left: 0;
-  bottom: 18px;
-  margin: 0;
+.footer__author {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   color: white;
 }
 
-.footer__column-heading {
+.footer__columns-heading {
   margin: 0 0 20px 0;
   line-height: 30px;
   font-size: 18px;
@@ -327,7 +332,7 @@
   color: white;
 }
 
-.footer__column-links {
+.footer__columns-link {
   padding-left: 0;
   list-style: none;
 }
@@ -339,6 +344,10 @@
   color: white;
   text-decoration: none;
   list-style: none;
+}
+
+.footer_list_item:hover {
+  color: #2F80ED;
 }
 
 .footer__social-icon {
