@@ -237,14 +237,18 @@
   position: relative;
   overflow: hidden;
 }
-.section-title_theme_dark {
-  color: white;
-  width: 60%;
-  text-align: center;
-  margin: 90px auto 20px;
+
+.section-title {
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
+  width: 60%;
+  text-align: center;
+  margin: 90px auto 20px;
+}
+
+.section-title_theme_dark {
+  color: white;
 }
 
 .section-subtitle_theme_dark {
@@ -261,25 +265,34 @@
   z-index: 2;
   margin: 0 auto 90px;
 }
+
+.table__cell {
+  width: 200px;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
-    width: 200px;
     color: white;
     margin-right: 0;
     margin-top: 80px;
 }
 
-.heading_theme_dark {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+}
+
+.table__heading_theme_dark {
   margin: 0 0 20px 0;
 }
 
-.text_theme_dark {
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+}
+
+.table__text_theme_dark {
   margin: 0;
 }
 
@@ -289,7 +302,7 @@
   height: 877px;
   width: 877px;
   right: -210px;
-  top: auto;
+  top: 0;
 }
 
 .footer {
@@ -306,11 +319,13 @@
   margin: 60px auto 40px;
 }
 
-.footer__columns_content_copyright {
-  flex-basis: 711px;
+.footer__column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.footer__column_content_copyright {
+  flex-basis: 711px;
 }
 
 .logo_place_footer {
@@ -324,7 +339,10 @@
   color: white;
 }
 
-.footer__columns-heading {
+.footer__column_content_info {
+ justify-content: flex-start;
+}
+.footer__column-heading {
   margin: 0 0 20px 0;
   line-height: 30px;
   font-size: 18px;
@@ -332,12 +350,13 @@
   color: white;
 }
 
-.footer__columns-link {
+.footer__column-links {
   padding-left: 0;
   list-style: none;
+  margin: 0;
 }
 
-.footer_list_item {
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -346,7 +365,11 @@
   list-style: none;
 }
 
-.footer_list_item:hover {
+.footer__column_content_social {
+  justify-content: flex-start;
+}
+
+.footer__column-link:hover {
   color: #2F80ED;
 }
 
