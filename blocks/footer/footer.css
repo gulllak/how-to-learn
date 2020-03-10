@@ -1,0 +1,19 @@
+@import url('../footer/__columns/footer__columns.css');
+@import url('../footer/__column/footer__column.css');
+@import url('../footer/__column/_content/footer__column_content_copyright.css');
+@import url('../logo/logo.css');
+@import url('../logo/_place/logo_place_footer.css');
+@import url('../footer/__author/footer__author.css');
+@import url('../footer/__column/_content/footer__column_content_info.css');
+@import url('../footer/__column-heading/footer__column-heading.css');
+@import url('../footer/__column-links/footer__column-links.css');
+@import url('../footer/__column-links/_item/footer__column-links_item.css');
+@import url('../footer/__column/_content/footer__column_content_social.css');
+@import url('../footer/__social-icon/footer__social-icon.css');
+
+
+.footer {
+  display: flex;
+  min-height: 350px;
+  background-color: #1F1F1F;
+}
