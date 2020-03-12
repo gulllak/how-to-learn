@@ -5,9 +5,9 @@
   margin-left: 20px;
   text-decoration: none;
   transition: linear 0.3s;
+  color: #2F80ED;
 }
 
 .khan__buy-link:hover {
-  color: #2F80ED;
   opacity: 0.5;
 }
